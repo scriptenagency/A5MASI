@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A5MASI - أسهل تجربة شراء</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="main-header">
+            <h1>A5MASI</h1>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h2>تجربة جديدة للشراء بالدارجة</h2>
+                <p>مساعد صوتي كيشرح ليك كلشي خطوة بخطوة. بلا تعقيدات.</p>
+            </section>
+
+            <section class="product-grid" id="product-grid">
+                <h2>المنتجات والبرامج</h2>
+
+                <div class="product-card glass-panel" data-product-id="skin" data-product-name="باك العناية بالبشرة">
+                    <div class="product-image-placeholder"></div>
+                    <span class="product-tag">الأكثر طلباً</span>
+                    <h3>باك العناية بالبشرة</h3>
+                    <p>برنامج متكامل باش ترجّعي النضارة لبشرتك.</p>
+                    <button class="btn-start" data-action="open-overlay">نبدا دابا</button>
+                </div>
+
+                <div class="product-card glass-panel" data-product-id="weight" data-product-name="برنامج نقص الوزن">
+                    <div class="product-image-placeholder"></div>
+                    <h3>برنامج نقص الوزن</h3>
+                    <p>متابعة شخصية للوصول للوزن المثالي بطريقة صحية.</p>
+                    <button class="btn-start" data-action="open-overlay">نبدا دابا</button>
+                </div>
+
+                <div class="product-card glass-panel" data-product-id="focus" data-product-name="باك التركيز والطاقة">
+                    <div class="product-image-placeholder"></div>
+                    <h3>باك التركيز والطاقة</h3>
+                    <p>حلول طبيعية باش تزيد من التركيز ديالك في الخدمة أو القراية.</p>
+                    <button class="btn-start" data-action="open-overlay">نبدا دابا</button>
+                </div>
+                
+                <div class="product-card glass-panel" data-product-id="sleep" data-product-name="برنامج جودة النوم">
+                    <div class="product-image-placeholder"></div>
+                    <h3>برنامج جودة النوم</h3>
+                    <p>برنامج كيساعدك تتخلص من الأرق وتحسن جودة النعاس.</p>
+                    <button class="btn-start" data-action="open-overlay">نبدا دابا</button>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <div id="assistant-overlay" class="overlay-hidden">
+        <div class="overlay-content glass-panel">
+            <button id="close-overlay" class="close-button">&times;</button>
+            
+            <div id="overlay-body">
+                </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
